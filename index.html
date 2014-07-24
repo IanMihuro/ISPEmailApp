@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>ALL ACCOUNTS</title>
+</head>
+<body>
+<h2>ALL ACCOUNTS</h2>
+
+<hr>
+<table style="width:300px">
+<tr>
+<td>First Name</td>
+<td>Last Name</td>
+<td>Password</td>
+<td>Email</td>
+</tr>
+{% for user in users %}
+  <tr>
+<td>{{ user.firstname }}</td>
+<td>{{ user.lastname }}</td>
+<td>{{ user.password }}</td>
+<td>{{ user.emailaddress }}</td>
+</tr>
+{% endfor %}
+</table>
+

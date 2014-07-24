@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Search Results</title>
+</head>
+<body>
+<h2>Search Results.</h2>
+
+<table style="width:500px">
+
+<tr>
+<td>First Name</td>
+<td>Last Name</td>
+<td>Password</td>
+<td>Email</td>
+</tr>
+{% for row in rows %}
+  <tr>
+<td>{{ row.firstname }}</td>
+<td>{{ row.lastname }}</td>
+<td>{{ row.password }}</td>
+<td>{{ row.emailaddress }}</td>
+<td>{{ rows }}</td>
+</tr>
+{% endfor %}
+
+
+</table>
+</html>
